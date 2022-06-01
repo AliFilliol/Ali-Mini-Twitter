@@ -1,0 +1,28 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+
+$myFont: Helvetica, sans-serif;
+$myColor: rgb(29, 190, 110);
+$myFontSize: 28px;
+$myWidth: 800px;
+
+body {
+  font-family: $myFont;
+  font-size: $myFontSize;
+  background-color: $myColor;
+  
+}
+
+#container {
+  width: $myWidth;
+}
+ 
+
+

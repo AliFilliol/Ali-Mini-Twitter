@@ -10,6 +10,12 @@
 ts value for section title to "Mini Twitter" (section content is used in messages.blade.php) -->
 @section('content')
 
+<img src="{{ asset('img/Twitter.png') }}" alt="">
+
+         {{ asset('img/Twitter.png') }}
+
+         <img src="/public/img /Twitter.png"> 
+  
  
 <h2>Create new message: </h2>
  
@@ -30,6 +36,17 @@ ts value for section title to "Mini Twitter" (section content is used in message
    gets from MessageController.php. for each element of the loop which
    we call $message we print the properties (title, content
    and created_at in an <li> element -->
+
+   <ul>
+@foreach ($messages as $message)
+   <li>
+	... ...
+       <span>{{ $message->updated_at->diffForHumans() }}</span>
+       <a href="/message/{{$message->id}}">Edit</a>
+   </li>
+@endforeach
+</ul>
+
 @foreach ($messages as $message) 
    <li>
        <b>

@@ -1,0 +1,25 @@
+// Body
+$body-bg: #f8fafc;
+
+// Typography
+$font-family-sans-serif: "Nunito", sans-serif;
+$font-size-base: 0.9rem;
+$line-height-base: 1.6;
+
+$font-stack: Helvetica, sans-serif;
+$primary-color: #333;
+$font-stack: Helvetica, sans-serif;
+$primary-color: #333;
+$background-color: rgb(193, 247, 229);
+
+body {
+    font: 100% $font-stack;
+    color: $primary-color;
+    background-color: $background-color;
+
+    font: 100% $font-stack;
+    color: $primary-color;
+
+    font: 100% $font-stack;
+    color: $primary-color;
+}
